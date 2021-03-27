@@ -2,9 +2,9 @@
 <%= render partial: "./components/fixed_back_button", locals: { path: root_path, label: "home" }%>
 
 <div class="banner" style='background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2)), url(<%= cloudinary_url(@background_photo_id, width: 1440, crop:"fill", effect: "grayscale", opacity: 20) %>);'>
-  <div class="container">
+  <div class="container about">
     <div class="title pt-5 text-center">
-      <h1>About</h1>
+      <h1>about</h1>
     </div>
     <div class="row spacer-above">
     </div>
@@ -12,6 +12,12 @@
       <h1 class="d-inline">I create </h1><h1 class="elongate-text d-inline">digital solutions</h1><h1 class="d-inline"> for <strong>you</strong></h1>
     </div>
     <div class="row spacer-below">
+    </div>
+    <div class="row arrow-down">
+      <div class="col-12 text-center">
+        <h6 class="my-0">Scroll down for more</h6>
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </div>
   </div>
 </div>

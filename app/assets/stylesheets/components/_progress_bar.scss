@@ -1,0 +1,12 @@
+.progress {
+  width: 100%;
+  background-color: transparent;
+  height: 5px;
+  display: block;
+}
+.progress-bar {
+  background-color: red;
+  width: 0%;
+  display: block;
+  height: inherit;
+}

@@ -1,0 +1,32 @@
+.about {
+  .spacer-below {
+    min-height: 30vh;
+  }
+}
+
+.arrow-down {
+  animation: up-and-down 2s 1s linear infinite;
+}
+
+@keyframes up-and-down {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, -20px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(0px, 20px);
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+  .spacer-below {
+    min-height: 25vh;
+  }
+}
+}
