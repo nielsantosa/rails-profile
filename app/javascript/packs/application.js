@@ -28,12 +28,16 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initChangeBackground } from '../components/change_background';
+import { scrollProgressBar } from '../components/progress_bar';
 
 document.addEventListener('turbolinks:load', (event) => {
   // Call your functions here, e.g:
   // initSelect2();
   if (window.location.href.includes("/contact")){
     initChangeBackground();
+  }
+  if (window.location.href.includes("/works")){
+    scrollProgressBar();
   }
 });
 
