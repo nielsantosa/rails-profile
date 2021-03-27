@@ -27,8 +27,24 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { initChangeBackground } from '../components/change_background';
 
-document.addEventListener('turbolinks:load', () => {
+document.addEventListener('turbolinks:load', (event) => {
   // Call your functions here, e.g:
   // initSelect2();
+  if (window.location.href.includes("/contact")){
+    initChangeBackground();
+  }
+
+  // Animation
+  // if call was fired by turbolinks
+    if (event.originalEvent.data.timing.visitStart) {
+      document.querySelector('body')
+        .classList.add('fade')
+    } else {
+      document.querySelector('body').classList.remove('fade')
+    }
 });
+
+
+

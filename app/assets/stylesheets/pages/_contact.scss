@@ -1,0 +1,19 @@
+.touch {
+  transition: color 1s;
+  &:hover {
+    cursor: pointer;
+    color: red;
+  }
+}
+
+.social-media {
+  i {
+    transition: color 1s;
+    color: inherit;
+    font-size: 2.4em;
+    padding: 0px 5px;
+    &:hover {
+      color:red;
+    }
+  }
+}

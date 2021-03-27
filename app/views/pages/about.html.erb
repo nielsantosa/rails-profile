@@ -1,7 +1,7 @@
 <!-- Fixed Back Button -->
 <%= render partial: "./components/fixed_back_button", locals: { path: root_path, label: "home" }%>
 
-<div class="banner" style="background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2)), url('<%= image_path 'background-mountain.jpg'%>');">
+<div class="banner" style='background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2)), url(<%= cloudinary_url(@background_photo_id, width: 1440, crop:"fill", effect: "grayscale", opacity: 20) %>);'>
   <div class="container">
     <div class="title pt-5 text-center">
       <h1>About</h1>
@@ -9,7 +9,7 @@
     <div class="row spacer-above">
     </div>
     <div>
-      <h1>I create digital solutions for <strong>you</strong></h1>
+      <h1 class="d-inline">I create </h1><h1 class="elongate-text d-inline">digital solutions</h1><h1 class="d-inline"> for <strong>you</strong></h1>
     </div>
     <div class="row spacer-below">
     </div>
@@ -20,9 +20,26 @@
     <div class="row">
       <div class="col-12 col-md-3"></div>
       <div class="col-12 col-md-6">
-        <h1 class="pt-5">About</h1>
-        <p style="font-size: 1.25em;">Lorem ipsum dolor</p>
-        <p class="pb-5">Lorem ipsum dolor blabla</p>
+        <h1 class="pt-5 pb-2">About</h1>
+        <p style="font-size: 1.25em;">
+          Nathaniel is a highly enthusiastic individual that has the apt to learn and create.
+        </p>
+        <p>
+          Previously a civil and structural engineer trained, Nathaniel takes the dreaded leap of faith into the web developer world. He might be new to the world, but he is willing to learn and always aims to give his best.
+        </p>
+        <p>
+          With 5 years of training as a civil and structural engineer, Nathaniel has done rigorous training to be sharp and meticulous when it comes to details. Equipped with the experience of handling collaborators and clients, he is familiar with handling projects.
+        </p>
+        <p>
+          Nathaniel has a huge interest in giving pleasant visuals. His website design philosophy that he adapts is mobile-first. In order to achieve that, he uses extensive front-end library like Bootstrap.
+        </p>
+        <p>
+          Most of the projects that he has done are based on Ruby on Rails framework. Ruby on Rails are popular with the extensive library and strong community for developing websites, fast deployment of websites, and highly readable.
+        </p>
+        <p>
+          Cooking is one of Nathaniel’s dearest activities! His favorite cuisines are Indonesian and Chinese. Let him know if you are a fellow home-cook and willing to share some amazing recipes!
+        </p>
+        <div class="py-4"></div>
       </div>
       <div class="col-12 col-md-3"></div>
     </div>

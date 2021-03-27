@@ -9,17 +9,23 @@
     <div class="row">
       <div class="col-12 py-4">
       </div>
-      <div class="col-12 pt-5">
-        <h1>moocoo</h1>
-        <h5>revolutionizing make-up learning and shopping experience</h5>
+      <div class="col-12 mt-5 translate-text">
+        <%= link_to works_path(anchor: 'moocoo') do %>
+          <h1>moocoo</h1>
+          <h5>revolutionizing make-up learning and shopping experience</h5>
+        <% end %>
       </div>
-      <div class="col-12 pt-5">
-        <h1>olamoves</h1>
-        <h5>bringing the movement to you</h5>
+      <div class="col-12 mt-5 translate-text">
+        <%= link_to works_path(anchor: 'olamoves') do %>
+          <h1>olamoves</h1>
+          <h5>bringing the movement to you</h5>
+        <% end %>
       </div>
-      <div class="col-12 pt-5">
-        <h1>cocktailzilla</h1>
-        <h5>have fun with our easy-to-use databases for cocktails</h5>
+      <div class="col-12 mt-5 translate-text">
+        <%= link_to works_path(anchor: 'cocktailzilla') do %>
+          <h1>cocktailzilla</h1>
+          <h5>have fun with our easy-to-use databases for cocktails</h5>
+        <% end %>
       </div>
     </div>
   </div>
@@ -28,7 +34,7 @@
   <div class="row">
     <div class="col-12 col-md-3">
     </div>
-    <div class="col-12 col-md-6 border-top">
+    <div id="moocoo" class="col-12 col-md-6 border-top">
       <h1 class="py-5"><strong>moocoo</strong></h1>
       <h2 class="py-3">Overview</h2>
       <p>Lorem ipsum dolor</p>
@@ -54,7 +60,7 @@
   <div class="row">
     <div class="col-12 col-md-3">
     </div>
-    <div class="col-12 col-md-6 border-top">
+    <div id="olamoves" class="col-12 col-md-6 border-top">
       <h1 class="py-5"><strong>olamoves</strong></h1>
       <h2 class="py-3">Overview</h2>
       <p>Lorem ipsum dolor</p>
@@ -80,7 +86,7 @@
   <div class="row">
     <div class="col-12 col-md-3">
     </div>
-    <div class="col-12 col-md-6 border-top">
+    <div id="cocktailzilla" class="col-12 col-md-6 border-top">
       <h1 class="py-5"><strong>cocktailzilla</strong></h1>
       <h2 class="py-3">Overview</h2>
       <p>Lorem ipsum dolor</p>

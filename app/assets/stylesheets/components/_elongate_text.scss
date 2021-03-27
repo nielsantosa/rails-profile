@@ -1,0 +1,11 @@
+.elongate-text {
+  transition: all 1s;
+  &:hover {
+    letter-spacing: 0.125em;
+    color: red;
+    // Make gradient text
+    // background: -webkit-linear-gradient(rgba(255,0,0,0.4), rgba(0,0,255,0.4));
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
+}

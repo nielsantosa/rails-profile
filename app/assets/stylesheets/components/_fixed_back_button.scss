@@ -6,8 +6,8 @@
   top: 10vh;
   left: 85vw;
   a {
-    color: $black;
-    transition: all 0.5s;
+    color: inherit;
+    transition: color 0.5s;
     &:hover {
       color: red
     }

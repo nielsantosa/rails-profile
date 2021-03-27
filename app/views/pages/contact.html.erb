@@ -1,7 +1,7 @@
 <!-- Fixed Back Button -->
 <%= render partial: "./components/fixed_back_button", locals: { path: root_path, label: "home" }%>
 
-<div class="banner" style="background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2)), url('<%= image_path 'background-mountain.jpg'%>');">
+<div class="banner" style='background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2)), url(<%= cloudinary_url(@background_photo_id, width: 1440, crop:"fill", effect: "grayscale", opacity: 20) %>);'>
   <div class="container">
     <div class="title pt-5 text-center">
       <h1>Contact</h1>
@@ -9,16 +9,23 @@
     <div class="row spacer-above">
     </div>
     <div class="row">
-      <div class="col-12 col-md-6">
-        <h1>Get in <strong>Touch</strong></h1>
+      <div class="col-12 col-md-6 my-2">
+        <h1 class="d-inline">Get in </h1><h1 class="d-inline touch"><strong>Touch</strong></h1>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-1"></div>
+      <div class="col-12 col-md-5">
         <h4><strong>Email me :</strong></h4>
         <h4>nathaniel.santosa@gmail.com</h4>
         <div style="height: 10%;"></div>
         <h4><strong>Connect with me :</strong></h4>
-        <h4>linkedin</h4>
-        <h4>Github</h4>
+        <div class="social-media d-flex">
+          <%= link_to "https://github.com/nielsantosa", target: "blank" do %>
+            <i class="fab fa-github"></i>
+          <% end %>
+          <%= link_to "https://www.linkedin.com/in/nathaniel-santosa-64a6b6105/", target: "blank" do %>
+            <i class="fab fa-linkedin"></i>
+          <% end %>
+        </div>
       </div>
     </div>
     <div class="row spacer-below">
