@@ -14,7 +14,13 @@
 
 // Body font
 body {
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
+  transition: all 1s;
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {

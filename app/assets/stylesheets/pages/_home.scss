@@ -5,7 +5,18 @@ a {
   }
 }
 
+.surprise {
+  transition: visibility 0.5s 1s;
+  display: none;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: red;
+}
+
 .banner {
+  transition: background-color 0.5s;
   min-height: 100vh;
   background-size: cover;
 }
@@ -14,6 +25,13 @@ a {
   height: 150px;
   img {
     height: 100%;
+  }
+}
+
+.profile-world {
+  transition: all 1s;
+  &:hover {
+
   }
 }
 

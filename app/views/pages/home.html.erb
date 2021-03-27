@@ -1,11 +1,17 @@
-<div class="banner" style="background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2)), url('<%= image_path 'background-mountain.jpg'%>');">
+<div class="surprise">
+</div>
+<div class="banner" style='background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2)), url(<%= cloudinary_url(@background_photo_id, width: 1440, crop:"fill", effect: "grayscale", opacity: 20) %>);'>
   <div class="container">
       <div class="row spacer-above">
       </div>
       <div class="row">
         <div class="col-12 col-md-8">
-          <h1>Hello World!</h1>
-          <h1>I'm <strong>Nathaniel</strong></h1>
+          <div>
+            <h1 class="d-inline">Hello World!</h1>
+          </div>
+          <div>
+            <h1 class="d-inline">I'm </h1><h1 class="elongate-text d-inline"><strong>Nathaniel</strong></h1>
+          </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="profile-picture">

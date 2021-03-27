@@ -9,9 +9,10 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <!-- <meta name="turbolinks-cache-control" content="no-cache"> -->
   </head>
 
-  <body>
+  <body data-turn-enter="fade-in-up" data-turn-exit="fade-out-up">
     <%= yield %>
   </body>
 </html>
