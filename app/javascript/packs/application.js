@@ -35,15 +35,6 @@ document.addEventListener('turbolinks:load', (event) => {
   if (window.location.href.includes("/contact")){
     initChangeBackground();
   }
-
-  // Animation
-  // if call was fired by turbolinks
-    if (event.originalEvent.data.timing.visitStart) {
-      document.querySelector('body')
-        .classList.add('fade')
-    } else {
-      document.querySelector('body').classList.remove('fade')
-    }
 });
 
 
