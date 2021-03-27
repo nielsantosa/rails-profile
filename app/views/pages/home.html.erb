@@ -1,11 +1,9 @@
-<div class="surprise">
-</div>
 <div class="banner" style='background-image: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.2)), url(<%= cloudinary_url(@background_photo_id, width: 1440, crop:"fill", effect: "grayscale", opacity: 20) %>);'>
   <div class="container">
       <div class="row spacer-above">
       </div>
       <div class="row">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 pb-4">
           <div>
             <h1 class="d-inline">Hello World!</h1>
           </div>
@@ -15,7 +13,7 @@
         </div>
         <div class="col-12 col-md-4">
           <div class="profile-picture">
-            <%= image_tag 'pp.jpg'%>
+            <%= cl_image_tag @profile_photo_id, size: "300x300", crop: "fill" %>
           </div>
         </div>
       </div>
