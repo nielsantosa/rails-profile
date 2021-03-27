@@ -11,3 +11,18 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Body font
+body {
+  letter-spacing: 0.04em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0px;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 4em;
+  }
+}

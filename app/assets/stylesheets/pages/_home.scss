@@ -1,1 +1,112 @@
-// Specific CSS for your home-page
+a {
+  color: $gray;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.banner {
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.profile-picture {
+  height: 150px;
+  img {
+    height: 100%;
+  }
+}
+
+// Very Small devices (portrait phones, 575px and below)
+.spacer-above {
+  min-height: 25vh;
+}
+.spacer-below {
+  min-height: 10vh;
+}
+.pages {
+  div h1 {
+    transition: all 0.5s;
+    &:hover {
+      transform: translate(20px, 0px);
+      color: red;
+    }
+  }
+}
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//   .spacer-above {
+//     min-height: 25vh;
+//   }
+//   .spacer-below {
+//     min-height: 10vh;
+//   }
+//   .pages {
+//     div h1{
+//       transition: all 0.5s;
+//       &:hover {
+//         transform: translate(20px, 0px);
+//         color: red;
+//       }
+//     }
+//   }
+// }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .spacer-above {
+    min-height: 30vh;
+}
+  .spacer-below {
+    min-height: 25vh;
+  }
+  .pages {
+    text-align: center;
+    div h1{
+      transition: all 0.5s;
+      &:hover {
+        transform: translate(0px, -20px);
+        color: red;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//   .spacer-above {
+//     min-height: 35vh;
+// }
+//   .spacer-below {
+//     min-height: 25vh;
+//   }
+//   .pages {
+//     text-align: center;
+//     div h1{
+//       transition: all 0.5s;
+//       &:hover {
+//         transform: translate(0px, -20px);
+//         color: red;
+//       }
+//     }
+//   }
+// }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//   .spacer-above {
+//     min-height: 35vh;
+// }
+//   .spacer-below {
+//     min-height: 25vh;
+//   }
+//   .pages {
+//     text-align: center;
+//     div h1{
+//       transition: all 0.5s;
+//       &:hover {
+//         transform: translate(0px, -20px);
+//         color: red;
+//       }
+//     }
+//   }
+// }
