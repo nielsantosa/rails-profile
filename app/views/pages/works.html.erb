@@ -36,7 +36,7 @@
   </div>
 </div>
 <div class="container">
-  <div class="row">
+  <div class="row my-2">
     <div class="col-12 col-md-3">
     </div>
     <div id="moocoo" class="col-12 col-md-6 border-top">
@@ -48,21 +48,17 @@
       <h2 class="py-3">Design Background</h2>
       <p>Elegance, modern, and demure is the embodiment of moocoo. moocoo wants its users to fully immersed on the flow rather than worrying about the overly complicated UI/UX. It is heavily targeted on the user journey when buying the products, while keeping the design clean and sleek.</p>
       <div class="row images">
+        <% (1..5).to_a.each do |i| %>
         <div class="col-12 col-md-6 py-2">
-          <%= image_tag "image-phone.png", alt: "image-phone" %>
+          <%= cl_image_tag "moo#{i}", alt: "moo#{i}" %>
         </div>
-        <div class="col-12 col-md-6 py-2">
-          <%= image_tag "image-phone.png", alt: "image-phone" %>
-        </div>
-        <div class="col-12 col-md-6 pt-2 pb-4">
-          <%= image_tag "image-phone.png", alt: "image-phone" %>
-        </div>
+        <% end %>
       </div>
     </div>
     <div class="col-12 col-md-3">
     </div>
   </div>
-  <div class="row">
+  <div class="row my-2">
     <div class="col-12 col-md-3">
     </div>
     <div id="olamoves" class="col-12 col-md-6 border-top">
@@ -74,21 +70,17 @@
       <h2 class="py-3">Design Background</h2>
       <p>Calm, energizing, and fresh - those adjectives are the foundation of olamoves design. The aesthetic is meant to enhance the users physical and spiritual journey with olamoves.</p>
       <div class="row images">
+        <% (1..4).to_a.each do |i| %>
         <div class="col-12 py-2">
-          <%= image_tag "image-desktop.png", alt: "image-desktop" %>
+          <%= cl_image_tag "ola#{i}", alt: "ola#{i}" %>
         </div>
-        <div class="col-12 py-2">
-          <%= image_tag "image-desktop.png", alt: "image-desktop" %>
-        </div>
-        <div class="col-12 pt-2 pb-4">
-          <%= image_tag "image-desktop.png", alt: "image-desktop" %>
-        </div>
+        <% end %>
       </div>
     </div>
     <div class="col-12 col-md-3">
     </div>
   </div>
-  <div class="row">
+  <div class="row my-2">
     <div class="col-12 col-md-3">
     </div>
     <div id="cocktailzilla" class="col-12 col-md-6 border-top">
@@ -99,17 +91,13 @@
       <p>Cocktailzilla believes in being minimalist and simple. It is modest because it is just a databases. The design is targeted to give the users the ease of finding and viewing. It does not want to overcomplicate a simple database.</p>
       <div class="row images">
         <div class="col-12 py-2">
-          <%= image_tag "image-desktop.png", alt: "image-desktop" %>
-        </div>
-        <div class="col-12 py-2">
-          <%= image_tag "image-desktop.png", alt: "image-desktop" %>
-        </div>
-        <div class="col-12 pt-2 pb-4">
-          <%= image_tag "image-desktop.png", alt: "image-desktop" %>
+          <%= cl_image_tag "cock1", alt: "cock1" %>
         </div>
       </div>
     </div>
     <div class="col-12 col-md-3">
     </div>
+  </div>
+  <div class="row py-3">
   </div>
 </div>
