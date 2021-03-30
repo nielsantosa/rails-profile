@@ -21,6 +21,6 @@ class PagesController < ApplicationController
   end
 
   def set_profile_image
-    @profile_photo_id = "profile_picture"
+    @profile_photo_id = "pp_2"
   end
 end
