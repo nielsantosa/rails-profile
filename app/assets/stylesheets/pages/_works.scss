@@ -5,6 +5,13 @@ a {
   }
 }
 
+.link {
+  font-size: 1.25em;
+  &:hover {
+    color: red;
+  }
+}
+
 .images {
   img {
     width: 100%;
